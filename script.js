@@ -17,6 +17,47 @@ function shuffle(array) {
   return array;
 }
 
+
+var neededFiles;
+var downloadedFiles = 0;
+
+
+function DownloadingFile( fileName ) {
+	downloadedFiles++;
+	refreshProgress();
+
+	setStatus("Downloading files...");
+}
+
+function SetStatusChanged( status ) {
+	if (status.indexOf("Getting Addon #") != -1) {
+		downloadedFiles++;
+		refreshProgress();
+	}else if (status == "Sending client info...") {
+		setProgress(100);
+	}
+
+	setStatus(status);
+}
+
+function SetFilesNeeded( needed ) {
+	neededFiles = needed + 1;
+}
+
+function refreshProgress() {
+	progress = Math.floor(((downloadedFiles / neededFiles)*100));
+
+	setProgress(progress);
+}
+
+function setStatus(text) {
+	$("#status").html(text);
+}
+
+function setProgress(progress) {
+	$("#loading-progress").css("width", progress + "%");
+}
+
 function showMessage(message) {
 if (message >= l_messages.length)
 	message = 0;
