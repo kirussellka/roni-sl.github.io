@@ -30,6 +30,6 @@ body {
 }
 
 #loading-progress {
-	height: 100%; width: 50%;
+	height: 100%; width: 0%;
 	background-color: #d3af37;
 }
