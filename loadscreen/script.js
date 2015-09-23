@@ -20,6 +20,7 @@ function shuffle(array) {
 
 var neededFiles;
 var downloadedFiles = 0;
+var youtubePlayer;
 
 
 function DownloadingFile( fileName ) {
@@ -88,4 +89,8 @@ $(function() {
 	l_messages = shuffle(l_messages);
 
 	showMessage(0);
+});
+
+$( document ).ready(function() {
+    $('audio').prop('volume', 0.1);
 });
