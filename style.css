@@ -1,0 +1,10 @@
+body {
+	background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/black_denim.png);
+}
+#messages {
+	display: none;
+	margin-top: -75px;
+	font-size: 25pt;
+	color: #d3af37;
+	font-family: 'Exo 2', sans-serif;
+}
