@@ -2,10 +2,12 @@ body {
 	background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/black_denim.png);
 	color: #d3af37;
 	font-family: 'Exo 2', sans-serif;
+	padding: 0; margin: 0;
+	width: 100%; height: 100%;
 }
 #messages {
 	display: none;
-	margin-top: -25px;
+	margin-top: 15px;
 	font-size: 25pt;
 	font-weight: 200;
 }
@@ -14,9 +16,8 @@ body {
 	position: absolute;
 	height: 50px;
 	width: 100%;
-	top: 50%;
 	text-align: center;
-	margin-top: -25px;
+	margin-top: -50px;
 	font-size: 20px;
 	line-height: 18px;
 }
