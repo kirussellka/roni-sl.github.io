@@ -82,7 +82,8 @@ var l_messages = [
 	"format C:",
 	"sudo make me a sandwich",
 	"Открываем еще одно сообщество",
-	"Тi шо сервер открыл? (c) SentexKoul"
+	"Тi шо сервер открыл? (c) SentexKoul",
+	"Дудосеры, дудосеры повсюду"
 ];
 
 $(function() {
